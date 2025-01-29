@@ -1,15 +1,15 @@
-//fonction pour gérer la hauteur du sapin
 function afficherSapin(hauteur) {
-    for (let i = 0; i < hauteur; i++) {
-        // Espace avant
-        let espaces = " ".repeat(hauteur - i - 1);
-        
-        // Construction du motif
-        let motif = "*".repeat(i + 1) + "|" + "*".repeat(i + 1);
-        
-        // Affichage
-        console.log(espaces + "/" + motif + "\\");
+  for (let i = 1; i <= hauteur; i++) {
+    let character = "//"
+    for(let k = hauteur; k > i; k--) {
+        character = "*" + character
+   
+    // for(let j = 1; j < i + 1; j++){
+    //     character = character + "#"
+    // }
     }
+    console.log(character)
+  }
 }
 
 // Exemple d'utilisation
